@@ -1,0 +1,40 @@
+body{
+  background: url(https://images.pexels.com/photos/208147/pexels-photo-208147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+   background-size: cover;
+}
+
+.navtext{
+  border-color: black;
+  color: black;
+}
+
+
+.navtext:hover{
+ background-color: #e4f9ff;
+  color: #ffcc00;
+}
+
+.batao{
+  text-align: center;
+}
+
+h1{
+/* font-family: 'Concert One', cursive; */
+font-family: 'Kaushan Script', cursive;
+font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem
+}
+
+.jok{
+  font-size: 2rem;
+   font-family: 'Concert One', cursive;
+   margin-bottom: 2rem;
+}
+
+.foot{
+  margin-top: 21rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: #fff;
+}

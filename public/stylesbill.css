@@ -1,5 +1,5 @@
 .heading{
-  background-color: #465881;
+  background-color: #a278b5;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -8,22 +8,20 @@
   font-size: 4rem;
   margin-bottom: 3rem;
 }
-/* 
-.bod{
-  background: url(https://cdn.pixabay.com/photo/2015/11/07/11/56/sound-1031657_1280.jpg);
-  background-size: cover;
-   background-repeat: no-repeat;
 
-} */
-
+.navtext{
+  background-color: #a278b5;
+  color: #fff;
+}
 
 .entry{
+  radius: 10px;
   margin: 0 12%;
   padding-top: 1rem;
   padding-left: 3rem;
   padding-bottom: 2.5rem;
   border-color: #5b5656;
-  background-color: #465881;
+  background-color: #a278b5;
   color: #fff;
   margin-top: 1rem;
   margin-bottom: 1rem;
