@@ -1,0 +1,58 @@
+.heading{
+  background-color: #465881;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-family: 'Indie Flower', cursive;
+  color: #fff;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+/* 
+.bod{
+  background: url(https://cdn.pixabay.com/photo/2015/11/07/11/56/sound-1031657_1280.jpg);
+  background-size: cover;
+   background-repeat: no-repeat;
+
+} */
+
+
+.entry{
+  margin: 0 12%;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-bottom: 2.5rem;
+  border-color: #5b5656;
+  background-color: #465881;
+  color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.imk{
+  margin-left: 10rem;
+}
+.im{
+   padding-top: 0.5rem;
+  /* position: relative; */
+  /* height: 1rem; */
+  width: 4rem;
+}
+
+
+.sp{
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3rem;
+}
+
+.spl{
+  margin-left: 5rem;
+margin-right: 5rem;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3rem;
+}
+
+.spbutton{
+  margin-left: 2.5rem;
+}
