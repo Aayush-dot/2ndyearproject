@@ -1,8 +1,9 @@
 const express = require('express');
 const request = require('request');
+const bodyParser = require('body-parser');
 const app=express();
 app.use(express.static("public"));
-
+app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.get("/",function(req,res){
   res.render("landing");
@@ -20,13 +21,11 @@ app.post("/home",function(req,res){
 
 var word,val;
 
-app.post("/dic2",function(req,res){
+app.post("/dic",function(req,res){
   res.render("dicindex");
 });
 
-app.post("/dic",function(req,res){
-  res.redirect("/dic2");
-});
+
 
 app.post("/find",function(req,res){
   word=req.body.word;
@@ -36,7 +35,11 @@ app.post("/find",function(req,res){
     // console.log(res1.body);
     val = JSON.parse(res1.body);
     console.log(val);
-    if(val.meta == undefined)
+    if(val[0] == undefined)
+    {
+      res.render("failure");
+    }
+    else if(val[0].meta == undefined)
     {
       res.render("failure");
     }

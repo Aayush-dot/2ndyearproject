@@ -10,11 +10,21 @@
 <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesdic.css">
 
    </head>
 
   <body class="abc">
+    <nav class="navbar navbar-light bg-dark">
+      <span class="navbar-brand mb-0 h1" >
+        <form class="" action="/home" method="post">
+          <button type="submit" class="btn btn-md btn-outline-primary btns navtext" name="submit">TAKE ME HOME</button>
+
+        </form>
+  </span>
+    </nav>
+
     <h1 class="heading headingfind"> <%= searched %> </h1>
     <div class="container abcd fi">
       <% for(var i=0;i < received.length && i<5 ; i++) { %>
@@ -23,7 +33,7 @@
         <p class="sublen"><span class="subheading">Acts as a/an : </span> <%= received[i].fl %></p>
         <br><br><br>
     <%  } %>
-    <form class="findf" action="/" method="get">
+    <form class="findf" action="/dic" method="post">
       <button type="submit" class="btn btn-lg btn-primary btns btnf" name="submit" >Let's Search Another Word</button></button>
     </form>
 
