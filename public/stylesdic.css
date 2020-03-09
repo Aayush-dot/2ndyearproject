@@ -1,0 +1,74 @@
+.mytay{
+  background-color: #fff;
+  color: #fff;
+}
+
+
+.abc{
+  background-color: #000;
+  color: #fff;
+
+
+}
+.heading{
+  text-align: center;
+  font-size: 8rem;
+  padding: 20px 0 50px;
+  font-family: 'Bangers', cursive;
+}
+
+.headingfind{
+  padding: 1rem 0 1.5rem ;
+  }
+
+.abcd{
+  padding-top: 3rem;
+
+}
+.fi{
+  padding-top: 1.5rem;
+}
+.ab{
+  padding-top: 3rem;
+  padding-left: 7rem;
+}
+
+.butt{
+  margin-top: 2rem;
+  text-align: center;
+  font-family: 'Bangers', cursive;
+
+}
+.btns{
+  background-color: #35495e;
+}
+.btns:hover{
+  background-color: white;
+  color: #000;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.btnf:hover{
+  color: #ff9032;
+}
+
+.foot{
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.sublen{
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subheading{
+  font-size: 3rem;
+  font-family: 'Bangers', cursive;
+  color: #ff9032;
+}
+
+.findf{
+  text-align: center;
+}

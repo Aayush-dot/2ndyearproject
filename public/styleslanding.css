@@ -1,0 +1,61 @@
+.bodyclass{
+  text-align: center;
+  background: url(https://cdn.pixabay.com/photo/2015/04/23/21/59/hot-air-balloon-736879_1280.jpg);
+   background-size: cover;
+   /* background-repeat: no-repeat; */
+}
+
+
+.cover{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+
+.heading{
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-family: 'Acme', sans-serif;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.descp{
+  font-family: 'Vollkorn', serif;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.anc{
+  color: #fff;
+  font-family: 'Vollkorn', serif;
+  font-size: 2rem;
+}
+
+.btnself{
+  border-color: #fff;
+  color: #fff;
+  font-family: 'Vollkorn', serif;
+  font-size: 2rem;
+  width: 12rem;
+  height: 5rem;
+  margin-top: 2rem;
+}
+
+.btnself:hover{
+  color: #fff;
+  background-color: #0f4c75;
+  font-family: 'Vollkorn', serif;
+  font-size: 2.3rem;
+  width: 14rem;
+  height: 6rem;
+}
+
+
+.foot{
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #fff;
+}
