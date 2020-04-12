@@ -21,7 +21,7 @@ app.post("/home",function(req,res){
   res.render("home");
 });
 
-var word,val;
+ var word,val1;
 
 app.post("/dic",function(req,res){
   res.render("dicindex");
@@ -35,20 +35,20 @@ app.post("/find",function(req,res){
   let url="https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + word + "?key="+"1f1f3a1c-0d7a-441c-a5a0-46094d35f54a";
   request(url,function(err,res1,body){
     // console.log(res1.body);
-    val = JSON.parse(res1.body);
-    console.log(val);
-    if(val[0] == undefined)
+    val1 = JSON.parse(res1.body);
+    console.log(val1);
+    if(val1[0] == undefined)
     {
       res.render("failure");
     }
-    else if(val[0].meta == undefined)
+    else if(val1[0].meta == undefined)
     {
       res.render("failure");
     }
     else{
     res.render("find",{
       searched: word,
-      received: val
+      received: val1
     });
   }
 });
@@ -91,6 +91,22 @@ app.post("/joke",function(req,res){
 });
 });
 
+
+app.post("/news",function(req,res){
+  var url ='http://newsapi.org/v2/top-headlines?' +
+          'country=in&' +
+          'apiKey=6438b2fa356d49578b3807911f13dded';
+request(url,function(err,res1,body){
+ var val=JSON.parse(res1.body);
+  console.log(val);
+  res.render("news",{
+    headlines: val
+  });
+});
+});
+
 app.listen("3000",function(){
   console.log("Listening at port 3000");
 })
+
+// 6438b2fa356d49578b3807911f13dded

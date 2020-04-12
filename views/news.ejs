@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newsstyles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-trans">
+      <span class="navbar-brand mb-0 h1" >
+        <form class="" action="/home" method="post">
+          <button type="submit" class="btn btn-sm btn-outline-light btns navtext hi" name="submit">TAKE ME HOME</button>
+
+        </form>
+  </span>
+    </nav>
+    <h1>LATEST HEADLINES</h1>
+
+
+    <% for(var i=0;i<headlines.articles.length;i++){ %>
+
+
+    <div class="row box" >
+      <div class="col-md-3 im" style="background-image: url('<%=headlines.articles[i].urlToImage%>');  background-size: 100% 100%;">
+
+        </div>
+        <div class="col-md-9 txt" >
+
+                      <a  class="al" href="<%=headlines.articles[i].url%>"><%= headlines.articles[i].title %></a>
+
+
+        </div>
+    </div>
+
+
+  <%}%>
+
+  <footer class="foot">
+    <div class="ll1">
+      ©Copyright Aayush Kalia
+    </div>
+      <div class="ll2">
+        <a class="attribution" href="https://newsapi.org/">Powered By <b>NEWS API</b></a>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
