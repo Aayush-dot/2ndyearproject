@@ -91,6 +91,11 @@ app.post("/joke",function(req,res){
 });
 });
 
+  app.post("/game",function(req,res){
+    res.render("game");
+  });
+
+
 
 app.post("/news",function(req,res){
   var url ='http://newsapi.org/v2/top-headlines?' +
