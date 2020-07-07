@@ -24,6 +24,8 @@
 .descp{
   font-family: 'Vollkorn', serif;
   color: #fff;
+  margin-left: 90px;
+  margin-right: 90px;
   font-size: 3rem;
 }
 
@@ -49,13 +51,14 @@
   font-family: 'Vollkorn', serif;
   font-size: 2.3rem;
   width: 14rem;
+  transition: .5s ease-in-out;
   height: 6rem;
 }
 
 
 .foot{
   margin-top: 7rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
   color: #fff;
 }

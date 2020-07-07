@@ -22,6 +22,7 @@
   background-color: #fff;
   font-family: 'Acme';
   color: #0f4c75;
+  transition:  .3s ease-in-out;
 }
 .btns{
   /* margin-left: 35rem;
